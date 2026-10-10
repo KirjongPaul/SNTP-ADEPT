@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sntp.local/schemas/pir-ir.v1.json",
+  "title": "PIR-IR",
+  "type": "object",
+  "required": ["schema", "project", "estimates"],
+  "properties": {
+    "schema": { "const": "pir-ir.v1" },
+    "id": { "type": "string" },
+    "source": {
+      "type": "object",
+      "properties": {
+        "file": { "type": "string" },
+        "hash": { "type": "string" },
+        "kind": { "type": "string", "enum": ["excel", "grand-xml", "created"] }
+      }
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "objectName": { "type": "string" },
+        "stage": { "enum": ["projectDoc", "workDoc", "workProject"] },
+        "designer": { "type": "string" },
+        "customer": { "type": "string" },
+        "vatRate": { "type": "number" },
+        "currentIndex": { "type": ["number", "null"] },
+        "roundMode": { "enum": ["none", "round1", "round10"] },
+        "kponPolicy": { "enum": ["autoKpon", "requireClarification", "expert"] }
+      }
+    },
+    "summary": { "type": "object" },
+    "estimates": { "type": "array" },
+    "issues": { "type": "array" }
+  }
+}

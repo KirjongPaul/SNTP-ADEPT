@@ -1,0 +1,17 @@
+---
+description: Как заводить и сверять сборники НЗ и СБЦ, не таща таблицы цен в git
+globs: src/**/Books/**,src/Sntp.Adept.Api/BookStore.cs,src/Sntp.Adept.Api/AdeptWebApp.Books.cs
+alwaysApply: false
+---
+
+# Сборники
+
+Источник истины — `book.json` (`adept-book.v1`) в `D:\NET\=SNTP-BOOKS`. `Kind`: `NZ` или `SBC`. Параметры `a` и `b` в тысячах рублей, как в приказе. В смете те же числа в рублях: сравнение и запись умножают на 1000.
+
+Два прохода: `work/draft.json` по тексту приказа, затем `work/check.json` только по файлу источника. `BookDiff.Compare` закрывает расхождение записью в `decisions.json` (поле, решение, страница). Нерешённое остаётся `disputed`. В `book.json` копируется только итог. Проекция в SQL — `POST /api/books/sync`, не ручной INSERT.
+
+Числа не брать из Excel сметы: смета — то, что потом сверяем. Расхождение реквизитов в обосновании — код `book-ref-mismatch`, паспорт сборника из-за него не менять.
+
+Неузнанное требование приказа — строка «нужен новый вид правила» в `report.md`. В расчёт оно не идёт. Виды: `range-select`, `interpolate-below-min`, `extrapolate-above-max`, `kpon-below-half`, `share-of-position`, `factor-when`.
+
+Для СБЦ читать skill `sntp-sbc-intake`. Для НЗ — `sntp-book-intake`. Реквизиты и статус приказа сверять в Кодексе, skill `sntp-codex-search`. Копия для расчёта — в `source/`. Пользователю в справочнике — ссылка из `codex.nd`.

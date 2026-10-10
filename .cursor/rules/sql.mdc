@@ -1,0 +1,15 @@
+---
+description: Изменения схемы SQL SNTP_PPO только идемпотентным ALTER, без пересоздания таблиц
+globs: Database/**,src/**/*Store.cs,src/**/*Schema*
+alwaysApply: false
+---
+
+# SQL
+
+Чужие таблицы не пересоздавать и не удалять. Свою структуру менять идемпотентным `IF OBJECT_ID` / `ALTER`, который можно выполнить повторно.
+
+Скрипт применения — через MCP `SNTP SQL`, инструмент `sql_execute_query`. `DROP TABLE` и пересоздание `AdeptProjects`, `AdeptBooks`, `AdeptBookItems`, `AdeptBookNotes` и каталогов запрещены.
+
+Новая таблица допустима только если её ещё нет (`OBJECT_ID … IS NULL`). Данные сборника в SQL попадают проекцией `POST /api/books/sync` из `book.json`, не правкой строк руками.
+
+В MySQL Адепт не подключаться и пароль в репозиторий не писать.

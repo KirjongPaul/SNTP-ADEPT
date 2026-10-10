@@ -1,0 +1,16 @@
+DIR D:\NET\=SNTP-BOOKS\Литература
+DIR D:\NET\=SNTP-BOOKS\НЗ 281-пр 2025 Инженерно-геологические изыскания
+  \book.json
+  \report.md
+DIR D:\NET\=SNTP-BOOKS\НЗ 849-пр 2023 Газовая промышленность
+  \letters
+  \source
+  \work
+  \book.json
+  \report.md
+  \source\приказ-849-пр.txt
+  \source\sources.json
+  \work\check.json
+  \work\decisions.json
+  \work\diff.json
+  \work\draft.json

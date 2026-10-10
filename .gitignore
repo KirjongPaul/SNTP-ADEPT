@@ -1,0 +1,45 @@
+# Build
+bin/
+obj/
+out/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Web
+web/node_modules/
+web/dist/
+src/Sntp.Adept.Api/wwwroot/
+
+# Data
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# IDE
+.vs/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Local dumps
+samples/excel-dump/
+samples/excel-dump-v32/
+samples/gsfx-unpacked/
+work-survey-hits.json
+work-xlsx-hits.json
+work-listing.txt
+
+# Документы и копии приказов — вне git
+*.pdf
+*.rtf
+*.doc
+*.docx
+*.zip
+*.lnk

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Document ProgramVersion="16.2.1.59411" Generator="GrandSmeta" DocumentType="{39200715-3435-47E0-8C27-68A028AD6D25}" MaxSysID="2" ProjectPhase="ProjectDoc" RegionCode="10010" RegionName="Проектно-изыскательские работы" ZoneName="Базовый федеральный район" RoundMode="Round10" ItogExpandTo="Default">
+  <IdsGenerator InternalCounter="2"/>
+  <GsDocSignatures>
+    <Item Caption="Главный инженер проекта" ID="360"/>
+    <Item Caption="Начальник отдела" ID="390">
+      <Attributes>
+        <Item Caption="Должность руководителя" ID="990"/>
+      </Attributes>
+    </Item>
+    <Item Caption="Название отдела" ID="395"/>
+    <Item Caption="Составил" ID="300">
+      <Attributes>
+        <Item Caption="Должность Подписанта" ID="885"/>
+      </Attributes>
+    </Item>
+    <Item Caption="Проверил" ID="310">
+      <Attributes>
+        <Item Caption="Должность Подписанта" ID="885"/>
+      </Attributes>
+    </Item>
+  </GsDocSignatures>
+  <Parameters/>
+  <VidRab_Catalog>
+    <Vids_Rab Type="Виды работ 2001г" CatFile="ВР ПИР">
+      <VidRab_Group Caption="Проектные работы" ID="17">
+        <Vid_Rab Caption="Проектные работы: Предприятия транспорта, хранения нефтепродуктов и автозаправочные станции (2015)" ID="11189" OsColumn="П"/>
+        <Vid_Rab Caption="Проектные работы: Искусственные сооружения (2015)" ID="11182" OsColumn="П"/>
+      </VidRab_Group>
+    </Vids_Rab>
+    <Vids_Rab/>
+  </VidRab_Catalog>
+  <AddZatrats/>
+  <Factors>
+    <Factor Caption="Стадийность проектирования" Identifier="Ки1" ProjectDoc="0,4" WorkDoc="0,6" WorkProject="1" Level="11" Options="UseInPos AllChapters AllVidRabs"/>
+  </Factors>
+  <Indexes/>
+  <Chapters>
+    <Chapter Caption="Новый Раздел">
+      <Position Caption="Подземный переход трубопровода через железные и автомобильные дороги, протяженность защитного футляра (кожуха), п.м:от 20 до 60" SysID="1" Number="1" Code="СБЦП19-5-1" Units="п.м" ESNTable="СБЦП &quot;Предприятия транспорта, хранения нефтепродуктов и автозаправочные станции (2015)&quot; табл.5 п.1" PriceA="8640" PriceB="17" Formula="(A+B*(0.4*X2+0.6*X))*К1*Ки1" ExpandedFormula="(8,64+0,017*(0.4*60+0.6*1000))*0,9*0,4" HasDBFactors="Yes" Vr="11189" Total="6930" PriceLevel="2001">
+        <Quantity Fx="1000" Result="1000"/>
+        <Factors>
+          <Factor Caption="СБЦ Автомобильные дороги общего пользования" Identifier="К1" Code="Распоряжение ОАО РЖД от 28.12.2009 №2697р Прил.1. п.3.4" ProjectDoc="0,9" WorkDoc="0,9" WorkProject="0,9" Level="1"/>
+        </Factors>
+        <RelativeFactors ProjectDoc="100" WorkDoc="100">
+          <RelativeFactor Caption="Пояснительная записка" ProjectDoc="2" RelativePrice="138,6"/>
+          <RelativeFactor Caption="Проект полосы отвода" ProjectDoc="3" WorkDoc="3" RelativePrice="207,9"/>
+          <RelativeFactor Caption="Технологические решения" ProjectDoc="10" WorkDoc="18" RelativePrice="693"/>
+          <RelativeFactor Caption="Конструктивные решения" ProjectDoc="49" WorkDoc="54" RelativePrice="3395,7"/>
+          <RelativeFactor Caption="Искусственные сооружения" ProjectDoc="1" WorkDoc="1" RelativePrice="69,3"/>
+          <RelativeFactor Caption="Обустройство" ProjectDoc="2" WorkDoc="2" RelativePrice="138,6"/>
+          <RelativeFactor Caption="Электроснабжение" ProjectDoc="2" WorkDoc="2" RelativePrice="138,6"/>
+          <RelativeFactor Caption="Водоснабжение и водоотведение" ProjectDoc="1" WorkDoc="1" RelativePrice="69,3"/>
+          <RelativeFactor Caption="Связь, сигнализация, автоматизация" ProjectDoc="3" WorkDoc="3" RelativePrice="207,9"/>
+          <RelativeFactor Caption="Здания и сооружения, входящие в инфраструктуру объекта" ProjectDoc="3" WorkDoc="7" RelativePrice="207,9"/>
+          <RelativeFactor Caption="Проект организации строительства" ProjectDoc="8" RelativePrice="554,4"/>
+          <RelativeFactor Caption="Мероприятия по обеспечению пожарной безопасности" ProjectDoc="10" WorkDoc="2" RelativePrice="693"/>
+          <RelativeFactor Caption="Смета на строительство" ProjectDoc="6" WorkDoc="7" RelativePrice="415,8"/>
+        </RelativeFactors>
+        <Items Caption="Подземный переход трубопровода через железные и автомобильные дороги, протяженность защитного футляра (кожуха), п.м:">
+          <Item Caption="от 20 до 60" Code="СБЦП19-5-1" ESNTable="СБЦП &quot;Предприятия транспорта, хранения нефтепродуктов и автозаправочные станции (2015)&quot; табл.5 п.1" MinQuantity="20" MaxQuantity="60" PriceA="8640" PriceB="17"/>
+        </Items>
+      </Position>
+      <Position Caption="Однопутный железнодорожный мост, размер наибольшего пролета до 42 м, полной длиной:свыше 800 м" SysID="2" Number="2" Code="СБЦП16-1-1.11-1" Units="м" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.11-1" PriceA="44500" PriceB="2810" Formula="(A+B*(0.4*X2+0.6*X))*Ки1" ExpandedFormula="(294,25+2,11*(0.4*800+0.6*1000))*0,4" HasDBFactors="Yes" Vr="11182" Total="894180" PriceLevel="2001">
+        <Quantity Fx="1000" Result="1000"/>
+        <RelativeFactors ProjectDoc="100" WorkDoc="100">
+          <RelativeFactor Caption="Пояснительная записка (общие вопросы проектирования)" ProjectDoc="27" WorkDoc="14" RelativePrice="241428,6"/>
+          <RelativeFactor Caption="Конструктивные решения. Искусственные сооружения: опоры" ProjectDoc="34" WorkDoc="65" RelativePrice="304021,2"/>
+          <RelativeFactor Caption="Конструктивные решения. Искусственные сооружения: пролетные строения" ProjectDoc="8" WorkDoc="10" RelativePrice="71534,4"/>
+          <RelativeFactor Caption="Проект организации строительства" ProjectDoc="18" RelativePrice="160952,4"/>
+          <RelativeFactor Caption="Смета на строительство" ProjectDoc="6" WorkDoc="7" RelativePrice="53650,8"/>
+          <RelativeFactor Caption="Иная документация (архитектурные решения)" ProjectDoc="7" WorkDoc="4" RelativePrice="62592,6"/>
+        </RelativeFactors>
+        <Items Caption="Однопутный железнодорожный мост, размер наибольшего пролета до 42 м, полной длиной:">
+          <Item Caption="до 25 м" Code="СБЦП16-1-1.1-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.1-1" MaxQuantity="25" PriceA="44500" PriceB="2810"/>
+          <Item Caption="свыше 25 до 50 м" Code="СБЦП16-1-1.2-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.2-1" MinQuantity="25" MaxQuantity="50" PriceA="46250" PriceB="2750"/>
+          <Item Caption="свыше 50 до 100 м" Code="СБЦП16-1-1.3-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.3-1" MinQuantity="50" MaxQuantity="100" PriceA="47250" PriceB="2730"/>
+          <Item Caption="свыше 100 до 200 м" Code="СБЦП16-1-1.4-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.4-1" MinQuantity="100" MaxQuantity="200" PriceA="63250" PriceB="2570"/>
+          <Item Caption="свыше 200 до 300 м" Code="СБЦП16-1-1.5-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.5-1" MinQuantity="200" MaxQuantity="300" PriceA="79250" PriceB="2490"/>
+          <Item Caption="свыше 300 до 400 м" Code="СБЦП16-1-1.6-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.6-1" MinQuantity="300" MaxQuantity="400" PriceA="100250" PriceB="2420"/>
+          <Item Caption="свыше 400 до 500 м" Code="СБЦП16-1-1.7-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.7-1" MinQuantity="400" MaxQuantity="500" PriceA="120250" PriceB="2370"/>
+          <Item Caption="свыше 500 до 600 м" Code="СБЦП16-1-1.8-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.8-1" MinQuantity="500" MaxQuantity="600" PriceA="150250" PriceB="2310"/>
+          <Item Caption="свыше 600 до 700 м" Code="СБЦП16-1-1.9-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.9-1" MinQuantity="600" MaxQuantity="700" PriceA="180250" PriceB="2260"/>
+          <Item Caption="свыше 700 до 800 м" Code="СБЦП16-1-1.10-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.10-1" MinQuantity="700" MaxQuantity="800" PriceA="222250" PriceB="2200"/>
+          <Item Caption="свыше 800 м" Code="СБЦП16-1-1.11-1" ESNTable="СБЦП &quot;Искусственные сооружения (2015)&quot; табл.1 п.1.11-1" MinQuantity="800" PriceA="294250" PriceB="2110"/>
+        </Items>
+      </Position>
+    </Chapter>
+  </Chapters>
+  <RelativeFactorsSummary Caption="Распределение стоимости">
+    <Item Caption="Пояснительная записка" Value="138,6"/>
+    <Item Caption="Проект полосы отвода" Value="207,9"/>
+    <Item Caption="Технологические решения" Value="693"/>
+    <Item Caption="Конструктивные решения" Value="3395,7"/>
+    <Item Caption="Искусственные сооружения" Value="69,3"/>
+    <Item Caption="Обустройство" Value="138,6"/>
+    <Item Caption="Электроснабжение" Value="138,6"/>
+    <Item Caption="Водоснабжение и водоотведение" Value="69,3"/>
+    <Item Caption="Связь, сигнализация, автоматизация" Value="207,9"/>
+    <Item Caption="Здания и сооружения, входящие в инфраструктуру объекта" Value="207,9"/>
+    <Item Caption="Проект организации строительства" Value="161506,8"/>
+    <Item Caption="Мероприятия по обеспечению пожарной безопасности" Value="693"/>
+    <Item Caption="Смета на строительство" Value="54066,6"/>
+    <Item Caption="Пояснительная записка (общие вопросы проектирования)" Value="241428,6"/>
+    <Item Caption="Конструктивные решения. Искусственные сооружения: опоры" Value="304021,2"/>
+    <Item Caption="Конструктивные решения. Искусственные сооружения: пролетные строения" Value="71534,4"/>
+    <Item Caption="Иная документация (архитектурные решения)" Value="62592,6"/>
+  </RelativeFactorsSummary>
+  <OsInfo OSChapter="3" LinkType="SB">
+    <CCChapter Cons="9" Rec="7" Road="10"/>
+  </OsInfo>
+  <RZDCalcOptions Option2="Yes" CalcKRed="Yes" DirectKRedValue="1" DirectKRedFormula="Formula1"/>
+</Document>

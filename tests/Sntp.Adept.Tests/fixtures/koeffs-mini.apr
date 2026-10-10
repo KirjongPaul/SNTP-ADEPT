@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE razdel [<!ELEMENT razdel (razdel)>
+]>
+<main version="test">
+<koeffs Name="НЗ №849/пр Объекты газовой промышленности. 2023 г.">
+  <koeff ID="10" Name="Стадийность рабочей документации" Type="Ценообразующий" TypeNum="1" Dolya="0.6" Status="On"/>
+  <koeff ID="11" Name="Усложняющий пример" Type="Усложняющий" TypeNum="3" Dolya="1.2" Status="On"/>
+</koeffs>
+</main>
